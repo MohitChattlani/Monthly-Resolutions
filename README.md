@@ -8,6 +8,10 @@ A simple resolutions app that lets you make new resolutions, delete them and che
 * meteorjs
 * mongodb
 
+### Screenshot
+
+![screen](https://user-images.githubusercontent.com/19841485/27519174-12efd150-5a0c-11e7-81d7-33f9561e5db8.PNG)
+
 ### How to run?
 
 * Install meteor
