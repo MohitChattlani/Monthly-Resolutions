@@ -1,0 +1,33 @@
+<head>
+  <title>resolution</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+  <h1>Monthly Resolutions!</h1>
+  <label class="hide-completed">
+  	<input type="checkbox" />Hide completed tasks 		
+  </label>
+  <form class="new-resolution">
+		<input type="text" name="title" placeholder="Enter resolution" autofocus autocomplete="false">
+		<input type="submit" class="btn btn-success" value="New resolution">
+  </form>
+
+  <ul>
+  {{#each resolutions}}
+    {{>info}}
+  {{/each}}
+  </ul>
+  </div>
+</body>
+
+<template name="info">
+  <li class="{{#if checked}}checked {{/if}}">
+  <input type="checkbox" class="check" checked="{{checked}}">
+  <span class="text">{{title}}</span>
+  <button class="rem btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Remove</button>
+  </li>
+</template>
+
+
